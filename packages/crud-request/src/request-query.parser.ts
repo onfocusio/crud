@@ -242,21 +242,17 @@ export class RequestQueryParser implements ParsedRequestParams {
     return data.split(this._options.delimStr);
   }
 
-  private parseSearchQueryParam(d: any): SCondition {
+  private parseSearchQueryParam(d: any): string {
     try {
       if (isNil(d)) {
         return undefined;
       }
 
-      const data = JSON.parse(d);
-
-      if (!isObject(data)) {
-        throw new Error();
+      if (typeof d === 'string') {
+        return d
       }
-
-      return data;
     } catch (_) {
-      throw new RequestQueryException('Invalid search param. JSON expected');
+      throw new RequestQueryException('Invalid search param. String expected');
     }
   }
 
@@ -271,7 +267,7 @@ export class RequestQueryParser implements ParsedRequestParams {
       '$inL',
       '$notinL',
     ];
-    const isEmptyValue = ['isnull', 'notnull', '$isnull', '$notnull'];
+    const isEmptyValue = ['isnull', 'notnull', '$isnull', '$notnull', '$istrue', '$isfalse'];
     const param = data.split(this._options.delim);
     const field = param[0];
     const operator = param[1] as ComparisonOperator;
