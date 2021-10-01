@@ -104,10 +104,9 @@ export class RequestQueryBuilder {
     return this;
   }
 
-  search(s: SCondition) {
-    if (!isNil(s) && isObject(s)) {
-      this.queryObject[this.paramNames.search] = JSON.stringify(s);
-    }
+  search(q: string) {
+    this.queryObject[this.paramNames.search] = q;
+    
     return this;
   }
 

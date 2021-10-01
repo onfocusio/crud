@@ -6,12 +6,11 @@ import {
   QueryJoinArr,
   QuerySort,
   QuerySortArr,
-  SCondition,
 } from '../types';
 
 export interface CreateQueryParams {
   fields?: QueryFields;
-  search?: SCondition;
+  search?: string;
   filter?: QueryFilter | QueryFilterArr | Array<QueryFilter | QueryFilterArr>;
   or?: QueryFilter | QueryFilterArr | Array<QueryFilter | QueryFilterArr>;
   join?: QueryJoin | QueryJoinArr | Array<QueryJoin | QueryJoinArr>;
