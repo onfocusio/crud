@@ -6,7 +6,7 @@
   "workspaces": [
     "packages/*"
   ],
-  "private": false,
+  "private": true,
   "scripts": {
     "bootstrap": "npx lerna bootstrap",
     "s": "npx nps",
