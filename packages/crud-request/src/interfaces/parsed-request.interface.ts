@@ -5,7 +5,7 @@ export interface ParsedRequestParams {
   fields: QueryFields;
   paramsFilter: QueryFilter[];
   authPersist: ObjectLiteral;
-  search: SCondition;
+  search: string;
   filter: QueryFilter[];
   or: QueryFilter[];
   join: QueryJoin[];
