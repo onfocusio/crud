@@ -1,5 +1,5 @@
 {
-  "name": "@nestjsx/crud",
+  "name": "@adagio.io/crud",
   "description": "NestJs CRUD for RESTful APIs",
   "version": "5.0.0",
   "license": "MIT",
@@ -47,5 +47,6 @@
   "peerDependencies": {
     "class-transformer": "*",
     "class-validator": "*"
-  }
+  },
+  "gitHead": "d5fffe70043e4f9cde2df7182ea43c0428315bd8"
 }

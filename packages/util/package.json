@@ -1,5 +1,5 @@
 {
-  "name": "@nestjsx/util",
+  "name": "@adagio.io/util",
   "description": "NestJs CRUD for RESTful APIs - util",
   "version": "5.0.0",
   "license": "MIT",
@@ -35,5 +35,6 @@
   },
   "scripts": {
     "build": "npx tsc -b"
-  }
+  },
+  "gitHead": "d5fffe70043e4f9cde2df7182ea43c0428315bd8"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@nestjsx/crud-request",
+  "name": "@adagio.io/crud-request",
   "description": "NestJs CRUD for RESTful APIs - request query builder",
   "version": "5.0.0",
   "license": "MIT",
@@ -49,5 +49,6 @@
   "dependencies": {
     "@nestjsx/util": "^5.0.0",
     "qs": "^6.8.0"
-  }
+  },
+  "gitHead": "d5fffe70043e4f9cde2df7182ea43c0428315bd8"
 }

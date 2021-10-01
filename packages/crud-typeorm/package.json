@@ -1,5 +1,5 @@
 {
-  "name": "@nestjsx/crud-typeorm",
+  "name": "@adagio.io/crud-typeorm",
   "description": "NestJs CRUD for RESTful APIs - TypeORM",
   "version": "5.0.0",
   "license": "MIT",
@@ -40,5 +40,6 @@
   },
   "dependencies": {
     "@zmotivat0r/o0": "^1.0.2"
-  }
+  },
+  "gitHead": "d5fffe70043e4f9cde2df7182ea43c0428315bd8"
 }
