@@ -47,7 +47,7 @@
     "build": "npx tsc -b"
   },
   "dependencies": {
-    "@nestjsx/util": "^5.0.0",
+    "@adagio.io/util": "^5.0.0",
     "qs": "^6.8.0"
   },
   "gitHead": "d5fffe70043e4f9cde2df7182ea43c0428315bd8"
